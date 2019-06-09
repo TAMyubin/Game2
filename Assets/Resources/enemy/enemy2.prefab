@@ -147,7 +147,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   bCtrl: 0
   isCtrl: 0
-  HP: 10
+  HP: 30
   num: 107
   hurt: 0
   bDead: 0

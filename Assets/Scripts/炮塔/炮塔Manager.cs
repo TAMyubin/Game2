@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class 炮塔Manager : MonoBehaviour
 {
-    private TurretAttack Turret;
+ //   private TurretAttack Turret;
     [Header("初始金钱")]
     public int defen = 100;
+    [Header("炮塔")]
+    public GameObject[] paota;
 
     [Header("得到的金币（传参）")]
     public int num;
@@ -56,8 +58,8 @@ public class 炮塔Manager : MonoBehaviour
                 if (defen >=Turretcost[0])
                 {
                     defen -= Turretcost[0];
-            // Instantiate(paota[0], this.transform, false);
-            Turret = TurretResources.GetInstance().CreatTurret(0);
+             Instantiate(paota[0], this.transform, false);
+           // Turret = TurretResources.GetInstance().CreatTurret(0);
         }
                 else
                 {
@@ -73,9 +75,9 @@ public class 炮塔Manager : MonoBehaviour
         if (defen >= Turretcost[1])
         {
             defen -= Turretcost[1];
-            Turret = TurretResources.GetInstance().CreatTurret(1);
+           // Turret = TurretResources.GetInstance().CreatTurret(1);
          //   Turret.transform.position = this.transform.position;
-          //  Instantiate(paota[1], this.transform, false);
+            Instantiate(paota[1], this.transform, false);
         }
         else
         {
@@ -92,8 +94,8 @@ public class 炮塔Manager : MonoBehaviour
         {
             defen -= Turretcost[2];
 
-            Turret = TurretResources.GetInstance().CreatTurret(2);
-            //Instantiate(paota[2], this.transform, false);
+          //  Turret = TurretResources.GetInstance().CreatTurret(2);
+            Instantiate(paota[2], this.transform, false);
         }
         else
         {

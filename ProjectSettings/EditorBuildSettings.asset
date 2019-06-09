@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/levom/Scenes/StartMenu.unity
+    guid: 413ab92a760447245a46aac7cddf4e9d
+  - enabled: 1
+    path: Assets/levom/Scenes/Loading_ToNewGame.unity
+    guid: dec94eb8cbf9c9042833ca471b8c381a
+  - enabled: 1
+    path: Assets/FPS1/FPS1.unity
+    guid: 6414b438ba5294940b3f8811ba8cb1fa
   m_configObjects: {}

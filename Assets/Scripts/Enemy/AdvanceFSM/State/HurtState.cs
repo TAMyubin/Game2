@@ -12,6 +12,7 @@ public class HurtState : FSMState
     {
        if (self.GetComponent<NPCjinzhan>().HP <= 0)
         {
+            Debug.Log("中弹了!!!!!!!!!!!!!");
             self.GetComponent<NPCjinzhan>().bDead = true;
           self.GetComponent<NPCjinzhan>().SetTransition(Transition.NoHp);
         }

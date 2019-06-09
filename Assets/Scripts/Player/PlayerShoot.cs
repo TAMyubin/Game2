@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour {
-    private new BulletManage bullet;
+   
 
     [Header("技能指向")]
     public bool ismiaozhun;
@@ -38,12 +38,12 @@ public class PlayerShoot : MonoBehaviour {
     }
  public void fly(Vector3 flypos)
     {
-        //GameObject go = Instantiate(feiji, transform.position, transform.rotation);
-        //       go.GetComponent<OrdinaryBullet>().SetPos(flypos);
-        bullet = BulletResources.GetInstance().CreatBullet(1);
-        bullet.GetComponent<OrdinaryBullet>().SetPos(flypos);
-        bullet.transform.position = this.transform.position;
-        bullet.transform.rotation = this.transform.rotation;
+        GameObject go = Instantiate(feiji, transform.position, transform.rotation);
+        go.GetComponent<OrdinaryBullet>().SetPos(flypos);
+        //bullet = BulletResources.GetInstance().CreatBullet(1);
+        //bullet.GetComponent<OrdinaryBullet>().SetPos(flypos);
+        //bullet.transform.position = this.transform.position;
+        //bullet.transform.rotation = this.transform.rotation;
     }
     void clear()
     {

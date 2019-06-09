@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   enemys: []
-  bullet: {fileID: 2418512392174130334, guid: 5e0f55f66d4a87e45925c05f8c80d54d, type: 3}
+  bullet: {fileID: 499181406, guid: 95a5363d0f98044408d365c4508756be, type: 3}
   firePos: {fileID: 159}
   head: {fileID: 156}
   bAttack: 0
@@ -256,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.191, z: 0.096}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0.096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 156}

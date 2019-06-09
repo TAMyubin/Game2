@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Duck : TurretAttack
 {
-    private new BulletManage bullet;
+    //private new BulletManage bullet;
     // TurretAttack TurretAttack = new TurretAttack();
     protected override void Attack()
     {
@@ -15,8 +15,8 @@ public class Duck : TurretAttack
              ani.SetBool("Attack", true);
                 if (bAttack)
                 {
-                    //GameObject go = Instantiate(bullet, firePos.position, firePos.rotation);
-                    //go.GetComponent<BulletManage>().SetPos(enemys[0].transform.position);
+                    GameObject go = Instantiate(bullet, firePos.position, firePos.rotation);
+                    go.GetComponent<BulletManage>().SetPos(enemys[0].transform.position);
                     //bullet = BulletResources.GetInstance().CreatBullet(2);
                     //bullet.GetComponent<OrdinaryBullet>().SetPos(enemys[0].transform.position);
                     //bullet.transform.position = this.transform.position;
@@ -24,7 +24,7 @@ public class Duck : TurretAttack
                     bAttack = false;
                 }
             }
-            else if(enemys[0].GetComponent<NPCjinzhan>().HP <= 0)
+            else 
             {
                 ani.SetBool("Attack", false);
                 for (int i = 0; i < enemys.Count - 1; i++)

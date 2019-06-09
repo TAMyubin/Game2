@@ -48,7 +48,6 @@ public class NPCjinzhan : AdvancedFSM
     [Header("怪物受到的伤害（传参用 下面的不用改）")]
     public int hurt;
     public bool bDead;//死了没
-    private bool d;
     public Transform temp ;
 
 
@@ -123,15 +122,7 @@ public class NPCjinzhan : AdvancedFSM
         AddFSMState(attackTurret);
         SonStart();
     }
-    protected override void SonOnEnable()
-    {
-        base.SonOnEnable();
-        if (d)
-        {
-            HP = hp;
-            d = false;
-        }
-    }
+
     protected override void FSMUpdate() {
 
         if (Turrets.Count > 0)
@@ -221,9 +212,9 @@ public class NPCjinzhan : AdvancedFSM
     {
         if (col.gameObject.tag == "Baby")//碰撞到Baby
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
             //回收
-            EnemyResource.GetInstance().RecyleEnemy(this);
+            //EnemyResource.GetInstance().RecyleEnemy(this);
             Baby.GetComponent<BabyHp>().iskouxue = true;
         }
         if (bAttack)//近战攻击玩家
@@ -282,10 +273,9 @@ public class NPCjinzhan : AdvancedFSM
         if (time >= 2)
         {
 
-            //  Destroy(this.gameObject);
-            //回收敌机
-            d = true;
-            EnemyResource.GetInstance().RecyleEnemy(this);
+              Destroy(this.gameObject);
+            //回收
+           // EnemyResource.GetInstance().RecyleEnemy(this);
         }
     }
 

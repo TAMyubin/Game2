@@ -8,8 +8,11 @@ TagManager:
   - Turret
   - realPlayer
   - Bullet
-  - FarAttack
   - paotai
+  - Baby
+  - BabyHp
+  - "\u70AE\u5854"
+  - End
   layers:
   - Default
   - TransparentFX

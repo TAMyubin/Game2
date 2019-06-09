@@ -14,9 +14,8 @@ public class SlowBownBullet :BulletManage
             npc.hurt = damage;
             npc.SetTransition(Transition.GetHurt);
             npc.isCtrl = true;
-            //Destroy(this.gameObject);
-            //回收
-            BulletResources.GetInstance().RecyleBullet(this);
+            Destroy(this.gameObject);
+
         }
     }
     }

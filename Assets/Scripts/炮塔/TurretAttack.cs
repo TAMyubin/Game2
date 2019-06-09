@@ -25,7 +25,6 @@ public class TurretAttack : MonoBehaviour {
     public float Hp = 100;
     private float hp;
     public bool yes;
-    private bool d;
     public enum TurretState
     {
         idle,
@@ -41,16 +40,6 @@ public class TurretAttack : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("realPlayer");
         turretState = TurretState.idle;
        transform.position = player.GetComponent<PlayerMove>().nowPos;
-    }
-    void OnEnable()
-    {
-        if (d)
-        {
-            Hp = hp;
-            transform.position = player.GetComponent<PlayerMove>().nowPos;
-            d = false;
-        }
-
     }
     // Update is called once per frame
     void Update () {
@@ -129,10 +118,9 @@ public class TurretAttack : MonoBehaviour {
     }
     void Dead()
     {
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
         //回收
-        d = true;
-        TurretResources.GetInstance().RecyleTurret(this);
+      //  TurretResources.GetInstance().RecyleTurret(this);
     }
     void OnTriggerEnter(Collider col)
     {
