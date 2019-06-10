@@ -118,9 +118,9 @@ public class TurretAttack : MonoBehaviour {
     }
     void Dead()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
         //回收
-      //  TurretResources.GetInstance().RecyleTurret(this);
+       TurretResources.GetInstance().RecyleTurret(this);
     }
     void OnTriggerEnter(Collider col)
     {

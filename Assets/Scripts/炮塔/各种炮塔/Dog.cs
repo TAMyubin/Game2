@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dog : TurretAttack
 {
-   // private new BulletManage bullet;
+    private BulletManage bullet;
     // TurretAttack TurretAttack = new TurretAttack();
     protected override void Attack()
     {
@@ -15,12 +15,12 @@ public class Dog : TurretAttack
              ani.SetBool("Attack", true);
                 if (bAttack)
                 {
-                    GameObject go = Instantiate(bullet, firePos.position, firePos.rotation);
-                    go.GetComponent<BulletManage>().SetPos(enemys[0].transform.position);
-                    //bullet = BulletResources.GetInstance().CreatBullet(3);
-                    //bullet.GetComponent<SlowBownBullet>().SetPos(enemys[0].transform.position);
-                    //bullet.transform.position = this.transform.position;
-                    //bullet.transform.rotation = this.transform.rotation;
+                    //GameObject go = Instantiate(bullet, firePos.position, firePos.rotation);
+                    //go.GetComponent<BulletManage>().SetPos(enemys[0].transform.position);
+                    bullet = BulletResources.GetInstance().CreatBullet(3);
+                    bullet.GetComponent<SlowBownBullet>().SetPos(enemys[0].transform.position);
+                    bullet.transform.position = this.transform.position;
+                    bullet.transform.rotation = this.transform.rotation;
                     bAttack = false;
                 }
             }

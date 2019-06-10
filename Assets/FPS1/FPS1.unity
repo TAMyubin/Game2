@@ -2915,6 +2915,11 @@ PrefabInstance:
       propertyPath: Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5253706112428383578, guid: 2fdbd8f8e5146064ab5a2b584721887e,
+        type: 3}
+      propertyPath: shootRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 797708241, guid: 2fdbd8f8e5146064ab5a2b584721887e, type: 3}
       propertyPath: m_Avatar
       value: 

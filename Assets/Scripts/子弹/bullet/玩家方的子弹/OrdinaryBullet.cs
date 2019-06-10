@@ -13,9 +13,9 @@ public class OrdinaryBullet : BulletManage
             Debug.Log("zhongdan!!!!!!!!!!!!!");
             col.gameObject.gameObject.GetComponent<NPCjinzhan>().hurt = damage;
             col.gameObject.gameObject.GetComponent<NPCjinzhan>().SetTransition(Transition.GetHurt);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
             //回收
-            //BulletResources.GetInstance().RecyleBullet(this);
+            BulletResources.GetInstance().RecyleBullet(this);
         }
     }
 }

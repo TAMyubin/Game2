@@ -28,9 +28,9 @@ public class BulletManage : MonoBehaviour
         if (Vector3.Distance(transform.position, temp) < 0.5f)
         {
 
-           Destroy(this.gameObject);
+          // Destroy(this.gameObject);
             //回收
-            //BulletResources.GetInstance().RecyleBullet(this);
+            BulletResources.GetInstance().RecyleBullet(this);
         }
     }
     void OnTriggerStay(Collider col)

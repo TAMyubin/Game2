@@ -6,7 +6,20 @@ using UnityEngine.UI;
 public class GameCTRL : MonoBehaviour
 {
     public GameObject go;
+    BulletResources Bullet;
     // Start is called before the first frame update
+    void Reset()
+    {
+        if (Bullet.Lives.Count > 0)
+        {
+            Bullet.Lives.Clear();
+        }
+        if (Bullet.Deaths.Count > 0)
+        {
+            Bullet.Deaths.Clear();
+        }
+  
+    }
     void Start()
     {
      
@@ -30,4 +43,5 @@ public class GameCTRL : MonoBehaviour
         Time.timeScale = 1;
         go.SetActive(false);
     }
+
 }

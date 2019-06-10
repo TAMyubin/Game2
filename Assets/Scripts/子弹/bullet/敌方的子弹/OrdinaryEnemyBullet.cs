@@ -10,9 +10,9 @@ public class OrdinaryEnemyBullet : BulletManage
         if (col.gameObject.gameObject.tag == "realPlayer")
         {
             col.gameObject.GetComponent<PlayHP>().TackDamage(damage);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
             //回收
-            //BulletResources.GetInstance().RecyleBullet(this);
+            BulletResources.GetInstance().RecyleBullet(this);
         }
     }
 }
