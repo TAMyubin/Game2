@@ -59,7 +59,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 47df751ed6374958d971a1b2fe63e74c Assembly-CSharp.dll:.EnermyCreate
-081ad3b6cf022f00a4fc7f38371a567a Assembly-CSharp.dll:.炮塔Manager
+455ead58467aacde95e3d295dfb27824 Assembly-CSharp.dll:.炮塔Manager
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 d09acb907604c0b87c9b9e9b26b30161 Assembly-CSharp.dll:.AdvancedFSM
 5aa9eb8b3960db82aa0d8218e402e33a Assembly-CSharp.dll:.SBFSM
@@ -188,6 +188,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.VolumeSouthEffect
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 afcf4c680ca3018f746fd6569c0cc3c6 Assembly-CSharp.dll:.EnermyAttack
+f53a8e55da320408d9b7031982ffaa90 Assembly-CSharp.dll:.Ani
 1a09389597b923892352155b148e2fbd Assembly-CSharp.dll:.GhostEnemy
 0ca1b374197f37b78e8e5b58518b0d69 Assembly-CSharp.dll:.VolumeControl
 8e712d46d0c2e456c8935fcbfaf8055f Assembly-CSharp.dll:.PauseMenu

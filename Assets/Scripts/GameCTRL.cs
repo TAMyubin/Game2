@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class GameCTRL : MonoBehaviour
 {
     public GameObject go;
+    private Animator goani;
     BulletResources Bullet;
+    public GameObject audioctrl;
+    private Animator slider;
     // Start is called before the first frame update
     void Reset()
     {
@@ -22,7 +25,10 @@ public class GameCTRL : MonoBehaviour
     }
     void Start()
     {
-     
+        goani = go.GetComponent<Animator>();
+        audioctrl = GameObject.FindGameObjectWithTag("GameController");
+        slider = audioctrl.GetComponentInChildren<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -33,15 +39,17 @@ public class GameCTRL : MonoBehaviour
 
     public void StopTheGame()
     {
-        go.SetActive(true);
-        Time.timeScale = 0;
-       
+        goani.SetBool("yes", true);
+       // Time.timeScale = 0;
+        slider.SetBool("yes", true);
 
     }
     public void StarTheGame()
     {
-        Time.timeScale = 1;
-        go.SetActive(false);
+        //  Time.timeScale = 1;
+        goani.SetBool("yes", false);
+        slider.SetBool("yes", false);
+
     }
 
 }

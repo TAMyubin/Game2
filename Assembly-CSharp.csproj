@@ -53,6 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Animator\Ani.cs" />
+     <Compile Include="Assets\Animator\ExitGame.cs" />
+     <Compile Include="Assets\Animator\StartUICtrl.cs" />
      <Compile Include="Assets\levom\Scripts\LoadingGame.cs" />
      <Compile Include="Assets\levom\Scripts\PauseMenu\PauseMenu.cs" />
      <Compile Include="Assets\levom\Scripts\StartMenu\StartMain.cs" />

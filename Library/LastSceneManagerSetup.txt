@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FPS1/FPS1.unity
+- path: Assets/levom/Scenes/StartMenu.unity
   isLoaded: 1
   isActive: 1
