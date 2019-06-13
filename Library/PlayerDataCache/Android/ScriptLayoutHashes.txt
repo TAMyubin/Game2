@@ -59,7 +59,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 47df751ed6374958d971a1b2fe63e74c Assembly-CSharp.dll:.EnermyCreate
-455ead58467aacde95e3d295dfb27824 Assembly-CSharp.dll:.炮塔Manager
+081ad3b6cf022f00a4fc7f38371a567a Assembly-CSharp.dll:.炮塔Manager
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 d09acb907604c0b87c9b9e9b26b30161 Assembly-CSharp.dll:.AdvancedFSM
 5aa9eb8b3960db82aa0d8218e402e33a Assembly-CSharp.dll:.SBFSM
@@ -136,9 +136,11 @@ d2fa77628f3b731cc15ef0db9eae8dd2 Assembly-CSharp.dll:.bullet
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
+f5c608a4330b506e5fab73058224382a Assembly-CSharp.dll:.ExitGame
 d2fa77628f3b731cc15ef0db9eae8dd2 Assembly-CSharp.dll:.EnemyBullet
 23fa1d7343addc79b6df24bc2b3f3519 Assembly-CSharp.dll:.anmove
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
+c0960e4953fe39d4df5494f037e8a529 Assembly-CSharp.dll:.StartUICtrl
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 d09acb907604c0b87c9b9e9b26b30161 Assembly-CSharp.dll:.FSM
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -190,9 +192,10 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 afcf4c680ca3018f746fd6569c0cc3c6 Assembly-CSharp.dll:.EnermyAttack
 f53a8e55da320408d9b7031982ffaa90 Assembly-CSharp.dll:.Ani
 1a09389597b923892352155b148e2fbd Assembly-CSharp.dll:.GhostEnemy
-0ca1b374197f37b78e8e5b58518b0d69 Assembly-CSharp.dll:.VolumeControl
+dfbcd6d508c0c7cb1b31509f305e9872 Assembly-CSharp.dll:.VolumeControl
 8e712d46d0c2e456c8935fcbfaf8055f Assembly-CSharp.dll:.PauseMenu
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.stop
 aec319c5c85d5b61cd98412fe23c8fb4 Assembly-CSharp.dll:.NPCGhostEnemy
 7252930bdc9bb51a78fa17d376f729e7 Assembly-CSharp.dll:.playLizi
 d2fa77628f3b731cc15ef0db9eae8dd2 Assembly-CSharp.dll:.feiji
@@ -202,5 +205,5 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 c574360a756214cf678ab4e07859c7df Assembly-CSharp.dll:.NPCFWSEnemy
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-ced8d260d03a16b1ba81c3d5fc3a435a Assembly-CSharp.dll:.GameCTRL
+75e51e36c3eb2d7c3970ec13bfe9ff0b Assembly-CSharp.dll:.GameCTRL
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OpenAnimation

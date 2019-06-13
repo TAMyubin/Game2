@@ -13,6 +13,7 @@ TagManager:
   - BabyHp
   - "\u70AE\u5854"
   - End
+  - audio
   layers:
   - Default
   - TransparentFX

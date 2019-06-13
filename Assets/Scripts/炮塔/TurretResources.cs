@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretResources
 {
-    private List<TurretAttack> Deaths = new List<TurretAttack>();
+    public List<TurretAttack> Deaths = new List<TurretAttack>();
     public List<TurretAttack> Lives = new List<TurretAttack>();
     private GameObject[] Turrets = new GameObject[3];//3种类型的敌机
     private static TurretResources _instance;

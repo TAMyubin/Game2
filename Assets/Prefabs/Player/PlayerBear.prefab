@@ -3201,7 +3201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497601722}
-  - component: {fileID: 497601725}
   - component: {fileID: 497601724}
   - component: {fileID: 497601723}
   m_Layer: 0
@@ -3225,44 +3224,6 @@ Transform:
   m_Father: {fileID: 1298032744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &497601725
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497601721}
-  m_Enabled: 0
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 0.90344834, g: 1, b: 0, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!120 &497601724
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3372,11 +3333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ismiaozhun: 1
   pos: {x: 10, y: 0, z: 10}
-  isfly: 0
   feiji: {fileID: 499181406, guid: 661f5068504c81446bbff48220b13121, type: 3}
-  AttackTime: 2
-  attack: 20
-  timer: 0
 --- !u!1 &499873213
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,7 +6179,7 @@ MonoBehaviour:
   HP: 10
   ChangeColorSpeed: 2
   HPslider: {fileID: 0}
-  go: {fileID: 0}
+  isdeath: 0
 --- !u!114 &5253706112428383578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6236,9 +6193,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  nowPos: {x: 0, y: 0, z: 0}
   flyPos1: {x: 0, y: 0, z: 0}
   state: 0
-  jiaoyinPos: {x: 0, y: 0, z: 0}
+  pos1: {x: 0, y: 0, z: 0}
+  isattack: 0
+  shootRate: 2
+  shoottime: 0
 --- !u!136 &3305925434669205670
 CapsuleCollider:
   m_ObjectHideFlags: 0

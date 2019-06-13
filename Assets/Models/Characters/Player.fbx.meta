@@ -149,7 +149,7 @@ ModelImporter:
     400142: Tail3
     4300000: Gun
     4300002: Player
-    7400000: Move
+    7400000: BB
     7400002: Idle
     7400004: Death
     9500000: //RootNode
@@ -195,10 +195,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Move
+      name: BB
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 25
+      firstFrame: 300
+      lastFrame: 524
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

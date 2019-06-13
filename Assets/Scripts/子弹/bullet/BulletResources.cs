@@ -12,6 +12,7 @@ public class BulletResources
     public static BulletResources GetInstance()
     {
        
+
         if (_instance == null)
         {
             _instance = new BulletResources();
@@ -45,6 +46,7 @@ public class BulletResources
                     Bullet.gameObject.SetActive(true);
                     break;
                 }
+               
             }
         }
         if (Bullet == null)
