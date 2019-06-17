@@ -12,11 +12,11 @@ public class NPCjinzhan : AdvancedFSM
     /*具体的实现类*/
     GameObject objPlayer;
     GameObject Baby;
-    Transform tr;
-    public int type;
-    public List<GameObject> Turrets = new List<GameObject>(); //保存攻击范围内的炮塔
     private NavMeshAgent EnermyAgent;
     public Animator ani;
+    public List<GameObject> Turrets = new List<GameObject>(); //保存攻击范围内的炮塔
+
+
     [Header("移动速度")]
     public float curSpeed;//移动的速度
     /*攻击状态需要的变量*/
@@ -25,7 +25,7 @@ public class NPCjinzhan : AdvancedFSM
     [Header("攻击CD（频率）")]
     public float shootRate;//限制多少秒后才能攻击
     public float elsapeedTime;
-    private float time = 0;
+    private float time = 0;//死亡时间
      public bool bAttack;//怪物是否进入攻击状态
     [Header("攻击距离")]
     public float dis;
@@ -39,7 +39,7 @@ public class NPCjinzhan : AdvancedFSM
     private float bctrltime;
     [Header("血量值")]
     public int HP;
-    private int hp;
+
   
     private 炮塔Manager manage;
     [Header("得到的分数（金钱）")]
@@ -52,7 +52,7 @@ public class NPCjinzhan : AdvancedFSM
 
 
     protected override void Initialize() {
-        hp = HP;
+  
         objPlayer = GameObject.FindGameObjectWithTag("realPlayer");//获取玩家
 
         Baby = GameObject.FindGameObjectWithTag("Baby");//获取baby

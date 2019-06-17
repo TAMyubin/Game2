@@ -15,6 +15,7 @@ public class DeathState : FSMState
 
     public override void Reason(Transform PlayerTransform, Transform BabyTransform, Transform Turret, Transform self)
     {
+        self.GetComponent<NPCjinzhan>().StopNav();
         self.GetComponent<NPCjinzhan>().Death();
     }
 }
