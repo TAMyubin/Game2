@@ -90,12 +90,14 @@ public class 炮塔Manager : MonoBehaviour
     /// </summary>
     public void potato()
     {
-        if (defen >= Turretcost[2])
+        int a = Random.Range(2, 5);
+        if (defen >= Turretcost[a])
         {
-            defen -= Turretcost[2];
+            defen -= Turretcost[a];
 
-           // Turret = TurretResources.GetInstance().CreatTurret(2);
-            Instantiate(paota[2], this.transform, false);
+            // Turret = TurretResources.GetInstance().CreatTurret(2);
+         
+            Instantiate(paota[a], this.transform, false);
         }
         else
         {
